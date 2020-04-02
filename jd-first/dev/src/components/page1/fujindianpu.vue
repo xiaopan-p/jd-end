@@ -4,7 +4,7 @@
       <hr>
       <p>
         <span @click="fn(index)" v-for="(item ,index) in list" :class="{color : index ===selectindex}">{{item}}</span>
-        <span @click="fn(index)" class="span-s">筛选∠</span>
+        <span @click="fn(index)" class="span-s1">筛选∠</span>
       </p>
       <ul class="xuan">
         <li>减免运费</li>
@@ -72,11 +72,11 @@
     font-size: 5vw;
     padding-left: 30px;
   }
-  .span-s{
+/*  .span-s{
     float: right;
     padding-top: 30px;
     padding-right: 30px;
-  }
+  }*/
   .color{
     color: greenyellow;
   }
@@ -152,5 +152,9 @@
     padding: 5px;
     border: 1px solid red;
     border-bottom: 0;
+  }
+  .span-s1{
+    float: right;
+    margin-right: 20px;
   }
 </style>
